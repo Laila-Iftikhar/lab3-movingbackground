@@ -1,0 +1,30 @@
+body
+{ /*background-image: url("clouds.jpg");
+background-repeat: repeat;
+     background-attachment: scroll;
+     background-position: center; */}
+	@keyframes animatedBackground {
+	from{ background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+#animate-area	{ 
+	width: 200%; 
+	height: 200%; 
+	background: url(newcloud.jpg) no-repeat center ;
+	background-position: 0px 0px;
+	background-repeat: repeat-x; 
+
+	animation: animatedBackground 10s linear infinite;
+}
+#aero	{ 
+	width: 500px; 
+	height: 200px; 
+	z-index: 100;
+	/*background: url(aero.gif) no-repeat center;*/
+	
+}
+img:hover{
+margin-top:30px;
+transform:translateY(90px);
+}
+}
